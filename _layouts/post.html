@@ -1,9 +1,25 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
+<div class="post {{ page.type }}">
+  <div class="post-top">
+    <a class="post-date" href="{{ site.url }}{{ page.url }}">{{ page.date | date: "%d-%m-%Y" }}</a>
+  </div>
+  <div class="post-content">
+  {% if page.type == "quote" %}
+    <div class="quote-container">
+      <blockquote class="short">{{ content }}</blockquote>
+    </div>
+    <div class="copy">
+      <span class="st">{{ page.author }}</span>
+    </div>
+  {% elsif page.type == "text" %}
+    <h2><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h2>
+    <div class="copy">
+      {{ content }}
+    </div>
+  {% else %}
+  {% endif %}
+  </div>
+  <div class="post-bottom"></div>
 </div>

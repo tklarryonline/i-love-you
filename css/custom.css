@@ -1,0 +1,26 @@
+body {
+    background-color: #6E2436;
+    background-image: url('../img/noise.png');
+}
+
+#container {
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+    width: 619px;
+}
+
+.glow {
+    background: url('../img/glow.png') no-repeat 0 0;
+    left: -200px;
+    position: absolute;
+    top: 0;
+    height: 754px;
+    width: 1020px;
+    z-index: 1;
+}
+
+.site {
+    position: relative;
+    z-index: 2;
+}

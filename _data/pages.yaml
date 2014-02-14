@@ -1,0 +1,4 @@
+- name: Trang chủ
+  url: "/"
+- name: Giới Thiệu
+  url: "/about"

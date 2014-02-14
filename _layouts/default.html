@@ -10,28 +10,41 @@
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom CSS -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Istok+Web:400,700' type='text/css'>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- Custom JS -->
 
   </head>
   <body>
     <div id="container">
-      <div class="glow"></div>
+      <div id="bg-glow"></div>
 
       <div class="site">
-        <div class="nav-top">
+        <div class="nav top">
           <ul>
-            {% for page in site.data.pages %}
-              <li><a href="{{ site.url }}{{ page.url }}">{{ page.name }}</a></li>
-            {% endfor %}
+          {% for page in site.data.pages %}
+            <li><a href="{{ site.url }}{{ page.url }}">{{ page.name }}</a></li>
+          {% endfor %}
+          <li><a href="mailto:{{ site.data.global.author.mail }}">I-meo Anh</a></li>
           </ul>
         </div>
 
         {{ content }}
 
-        <div class="footer">
+        <div class="nav bottom">
+          <ul>
+          {% for page in site.data.pages %}
+            <li><a href="{{ site.url }}{{ page.url }}">{{ page.name }}</a></li>
+          {% endfor %}
+          <li><a href="mailto:{{ site.data.global.author.mail }}">I-meo Anh</a></li>
+          </ul>
         </div>
+
+        <div id="footer">TKLarry tạo nên trang này từ tình yêu ♥</div>
       </div>
+      <div id="bg-mask"></div>
     </div>
   </body>
 </html>

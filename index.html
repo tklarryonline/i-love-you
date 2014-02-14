@@ -3,10 +3,41 @@ layout: default
 title: I love You
 ---
 
-<div id="home">
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li class="frame">{{ post.content }}</li>
-    {% endfor %}
-  </ul>
+<div id="posts">
+  <div id="about" class="post">
+    <div class="post-top"></div>
+    <div class="post-content">
+      <h1>Anh yêu Em</h1>
+      <div class="copy">
+        <p>là điều chân thành nhất,</p>
+        <p>và nơi này</p>
+        <p>là dành tặng cho Em</p>
+      </div>
+    </div>
+    <div class="post-bottom"></div>
+  </div>
+{% for post in site.posts %}
+  <div class="post {{ post.type }}">
+    <div class="post-top">
+      <a class="post-date" href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%d-%m-%Y" }}</a>
+    </div>
+    <div class="post-content">
+    {% if post.type == "quote" %}
+      <div class="quote-container">
+        <blockquote class="short">{{ post.content }}</blockquote>
+      </div>
+      <div class="copy">
+        <span class="st">{{ post.author }}</span>
+      </div>
+    {% elsif post.type == "text" %}
+      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="copy">
+        {{ post.content }}
+      </div>
+    {% else %}
+    {% endif %}
+    </div>
+    <div class="post-bottom"></div>
+  </div>
+{% endfor %}
 </div>

@@ -2,9 +2,9 @@
 layout: post
 date: 2013-03-16 01:06:08
 type: text
-title: Thư cho Em
-excerpt: "M yêu dấu,<br/>Đã rất nhiều lần Bi cầm bút và viết cho M, nhưng lại dừng vì không biết viết gì.
-Hì, chắc M chờ thư cũng lâu lắm."
+title: Một ngày Mười Sáu
+excerpt: "M yêu dấu,<br/>Nửa năm thứ năm trôi qua với biết bao sự kiện, biến động.
+Bi càng lúc càng bận bịu hơn, để đôi khi quên mất M là điều quan trọng nhất. Để đôi khi ta lại xa nhau..."
 ---
 
 M yêu,

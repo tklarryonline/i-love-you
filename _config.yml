@@ -1,5 +1,5 @@
-name: I love You
+name: Love
 markdown: redcarpet
-pygments: true
 encoding: utf-8
 timezone: Asia/Ho_Chi_Minh
+permalink: /:categories/:title/

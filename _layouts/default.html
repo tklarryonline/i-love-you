@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
+    <title>
+      {% capture default_name %}{{ site.name }} by tklarryonline.me{% endcapture %}
+      {% if page.title %}
+        {{ page.title }} | {{ default_name }}
+      {% else %}
+        {{ default_name }}
+      {% endif %}
+    </title>
     <meta name="viewport" content="width=device-width">
 
     <!-- syntax highlighting CSS -->
@@ -27,7 +34,7 @@
           {% for page in site.data.pages %}
             <li><a href="{{ site.url }}{{ page.url }}">{{ page.name }}</a></li>
           {% endfor %}
-          <li><a href="mailto:{{ site.data.global.author.mail }}">I-meo Anh</a></li>
+          <li><a href="mailto:{{ site.data.global.author.mail }}">E-mail Bi</a></li>
           </ul>
         </div>
 
@@ -42,7 +49,7 @@
           </ul>
         </div>
 
-        <div id="footer">TKLarry tạo nên trang này từ tình yêu ♥</div>
+        <div id="footer">Luân Nguyễn tạo nên trang này từ tình yêu ♥</div>
       </div>
       <div id="bg-mask"></div>
     </div>

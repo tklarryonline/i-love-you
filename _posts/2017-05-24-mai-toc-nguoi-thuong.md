@@ -25,10 +25,10 @@ và kể nhau nghe những câu chuyện không đầu không đuôi. Có lần,
 trường. Nàng, trong bộ áo dài trắng tinh khôi, vươn tay lên cao mà buộc tóc:
 
 <center>
-_Khoảnh khắc dịu dàng, tinh khiết ấy,_  
-_Ngàn năm đâu dễ để mà quên,_  
-_Tia nắng mơn man làn da trắng_  
-_Quyện vào mái tóc bỗng thành đêm._
+<i>Khoảnh khắc dịu dàng, tinh khiết ấy,</i><br/>
+<i>Ngàn năm đâu dễ để mà quên,</i><br/>
+<i>Tia nắng mơn man làn da trắng</i><br/>
+<i>Quyện vào mái tóc bỗng thành đêm.</i><br/>
 </center>
 
 Như trong một vở kịch Broadway, đèn trời quanh mình vụt tắt. Nàng, tỏa sáng như ánh trăng rằm, vẫn hồn nhiên mà buộc

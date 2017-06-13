@@ -2,4 +2,5 @@ name: Love
 markdown: redcarpet
 encoding: utf-8
 timezone: Asia/Ho_Chi_Minh
+permalink: /:categories/:title/
 url: "love.tklarryonline.me"
